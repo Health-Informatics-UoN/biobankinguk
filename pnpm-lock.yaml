@@ -4,6 +4,9 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  websocket-driver: '>=0.7.5'
+
 importers:
 
   .:
@@ -93,83 +96,8 @@ importers:
         specifier: ^2.12.0
         version: 2.30.1
       plotly.js:
-        specifier: ^1.58.4
-        version: 1.58.5
-      pwstrength-bootstrap:
-        specifier: ^1.2.10
-        version: 1.2.10
-      typeahead.js:
-        specifier: ^0.11.1
-        version: 0.11.1
-
-  app/Directory/bin/Debug/net6.0/Frontend:
-    dependencies:
-      '@avica/knockout-mapping':
-        specifier: ^2.7.0
-        version: 2.7.0(knockout@3.5.1)
-      bootbox:
-        specifier: ^4.4.0
-        version: 4.4.0
-      bootstrap:
-        specifier: ^3.4.1
-        version: 3.4.1
-      bootstrap-slider:
-        specifier: ^5.3.6
-        version: 5.3.6
-      datatables.net:
-        specifier: ^1.10.23
-        version: 1.13.11
-      datatables.net-bs:
-        specifier: ^1.10.23
-        version: 1.13.11
-      datatables.net-buttons:
-        specifier: ^1.1.2
-        version: 1.7.1
-      datatables.net-buttons-bs:
-        specifier: ^1.6.5
-        version: 1.7.1
-      datatables.net-rowreorder:
-        specifier: ^1.2.7
-        version: 1.5.0
-      datatables.net-rowreorder-bs:
-        specifier: ^1.2.7
-        version: 1.5.0
-      datetime-moment:
-        specifier: ^1.0.0
-        version: 1.0.0
-      font-awesome:
-        specifier: ^4.7.0
-        version: 4.7.0
-      jquery:
-        specifier: ^2.2.4
-        version: 2.2.4
-      jquery-ajax-unobtrusive:
-        specifier: ^3.2.6
-        version: 3.2.6
-      jquery-validation:
-        specifier: ^1.14.0
-        version: 1.21.0(jquery@2.2.4)
-      jquery-validation-unobtrusive:
-        specifier: ^3.2.11
-        version: 3.2.12
-      jquery.cookie:
-        specifier: ^1.4.1
-        version: 1.4.1
-      knockout:
-        specifier: ^3.4.2
-        version: 3.5.1
-      knockout.validation:
-        specifier: ^2.0.4
-        version: 2.0.4(knockout@3.5.1)
-      markdowndeep:
-        specifier: ^1.6.12
-        version: 1.6.12
-      moment:
-        specifier: ^2.12.0
-        version: 2.30.1
-      plotly.js:
-        specifier: ^1.58.4
-        version: 1.58.5
+        specifier: 2.25.2
+        version: 2.25.2
       pwstrength-bootstrap:
         specifier: ^1.2.10
         version: 1.2.10
@@ -2008,8 +1936,14 @@ packages:
   '@plotly/d3-sankey@0.7.2':
     resolution: {integrity: sha512-2jdVos1N3mMp3QW0k2q1ph7Gd6j5PY1YihBrwpkFnKqO+cqtZq3AdEYUeSGXMeLsBDQYiqTVcihYfk8vr5tqhw==}
 
+  '@plotly/d3@3.8.1':
+    resolution: {integrity: sha512-x49ThEu1FRA00kTso4Jdfyf2byaCPLBGmLjAYQz5OzaPyLUhHesX3/Nfv2OHEhynhdy2UB39DLXq6thYe2L2kg==}
+
   '@plotly/point-cluster@3.1.9':
     resolution: {integrity: sha512-MwaI6g9scKf68Orpr1pHZ597pYx9uP8UEFXLPbsCmuw3a84obwz6pnMXGc90VhgDNeNiLEdlmuK7CPo+5PIxXw==}
+
+  '@plotly/regl@2.1.2':
+    resolution: {integrity: sha512-Mdk+vUACbQvjd0m/1JJjOOafmkp/EpmHjISsopEz5Av44CBq7rPC05HHNbYGKVyNUF2zmEoBS/TT0pd0SPFFyw==}
 
   '@polka/url@1.0.0-next.25':
     resolution: {integrity: sha512-j7P6Rgr3mmtdkeDGTe0E/aYyWEWVtc5yFXtHCRHs28/jptDEWfaVOc5T7cblqy1XKPPfCxJc/8DwQ5YgLOZOVQ==}
@@ -3148,11 +3082,25 @@ packages:
   d3-force@1.2.1:
     resolution: {integrity: sha512-HHvehyaiUlVo5CxBJ0yF/xny4xoaxFxDnBXNvNcfW9adORGZfyNF1dj6DGLKyk4Yh3brP/1h3rnDzdIAwL08zg==}
 
+  d3-format@1.4.5:
+    resolution: {integrity: sha512-J0piedu6Z8iB6TbIGfZgDzfXxUFN3qQRMofy2oPdXzQibYGqPB/9iMcxr/TGalU+2RsyDO+U4f33id8tbnSRMQ==}
+
+  d3-geo-projection@2.9.0:
+    resolution: {integrity: sha512-ZULvK/zBn87of5rWAfFMc9mJOipeSo57O+BBitsKIXmU4rTVAnX1kSsJkE0R+TxY8pGNoM1nbyRRE7GYHhdOEQ==}
+    hasBin: true
+
+  d3-geo@1.12.1:
+    resolution: {integrity: sha512-XG4d1c/UJSEX9NfU02KwBL6BYPj8YKHxgBEw5om2ZnTRSbIcego6dhHwcxuSR3clxh0EpE38os1DVPOmnYtTPg==}
+
   d3-hierarchy@1.1.9:
     resolution: {integrity: sha512-j8tPxlqh1srJHAtxfvOUwKNYJkQuBFdM1+JAUfq6xqH5eAqf93L7oG1NVqDa4CpFZNvnNKtCYEUC8KY9yEn9lQ==}
 
   d3-interpolate@1.4.0:
     resolution: {integrity: sha512-V9znK0zc3jOPV4VD2zZn0sDhZU3WAE2bmlxdIwwQPPzPjvyLkd8B3JUVdS1IDUFDkWZ72c9qnv1GK2ZagTZ8EA==}
+
+  d3-interpolate@3.0.1:
+    resolution: {integrity: sha512-3bYs1rOD33uo8aqJfKP3JWPAibgw8Zm2+L9vBKEHJ2Rg+viTR7o5Mmv5mZcieN+FRYaAOWX5SJATX6k1PWz72g==}
+    engines: {node: '>=12'}
 
   d3-path@1.0.9:
     resolution: {integrity: sha512-VLaYcn81dtHVTjEHd8B+pbe9yHWpXKZUC87PzoFmsFrJqgFwDe/qxfp5MlfsfM1V5E/iVt0MmEbWQ7FVIXh/bg==}
@@ -3217,6 +3165,14 @@ packages:
 
   debug@2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+
+  debug@3.2.7:
+    resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
     peerDependencies:
       supports-color: '*'
     peerDependenciesMeta:
@@ -4469,6 +4425,9 @@ packages:
   is-mobile@2.2.2:
     resolution: {integrity: sha512-wW/SXnYJkTjs++tVK5b6kVITZpAZPtUrt9SF80vvxGiF/Oywal+COk1jlRkiVq15RFNEQKQY31TkV24/1T5cVg==}
 
+  is-mobile@4.0.0:
+    resolution: {integrity: sha512-mlcHZA84t1qLSuWkt2v0I2l61PYdyQDt4aG1mLIXF5FDMm4+haBCxCPYSr/uwqQNRk1MiTizn0ypEuRAOLRAew==}
+
   is-negative-zero@2.0.3:
     resolution: {integrity: sha512-5KoIu2Ngpyek75jXodFvnafB6DJgr3u8uuK0LEZJjrU19DrMD3EVERaR8sjz8CCGgpZvxPl9SuE1GMVPFHx1mw==}
     engines: {node: '>= 0.4'}
@@ -4989,6 +4948,9 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
+  native-promise-only@0.8.1:
+    resolution: {integrity: sha512-zkVhZUA3y8mbz652WrL5x0fB0ehrBkulWT3TomAQ9iDtyXZvzKeEA6GPxAItBYeNYl5yngKRX612qHOhvMkDeg==}
+
   natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
 
@@ -5015,6 +4977,11 @@ packages:
 
   ndarray@1.0.19:
     resolution: {integrity: sha512-B4JHA4vdyZU30ELBw3g7/p9bZupyew5a7tX1Y/gGeF2hafrPaQZhgrGQfsvgfYbgdFZjYwuEcnaobeM/WMW+HQ==}
+
+  needle@2.9.1:
+    resolution: {integrity: sha512-6R9fqJ5Zcmf+uYaFgdIHmLwNldn5HbK8L5ybn7Uz+ylX/rnOsSp1AHcvQSrCaFN+qNM1wpymHqD7mVasEOlHGQ==}
+    engines: {node: '>= 4.4.x'}
+    hasBin: true
 
   negotiator@0.6.3:
     resolution: {integrity: sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==}
@@ -5325,8 +5292,14 @@ packages:
   plotly.js@1.58.5:
     resolution: {integrity: sha512-ChTlnFXB4tB0CzcG1mqgUKYnrJsZ8REDGox8BHAa/ltsd48MOAhOmFgjyDxwsXyjjgwOI296GeYDft8g4ftLHQ==}
 
+  plotly.js@2.25.2:
+    resolution: {integrity: sha512-Pf6dPYGl21W7A3FTgLQ52fpgvrqGhCPDT3+612bxwg4QXlvxhnoFwvuhT1BRW/l2nbYGpRoUH79K54yf2vCMVQ==}
+
   point-in-big-polygon@2.0.1:
     resolution: {integrity: sha512-DtrN8pa2VfMlvmWlCcypTFeBE4+OYz1ojDNJLKCWa4doiVAD6PRBbxFYAT71tsp5oKaRXT5sxEiHCAQKb1zr2Q==}
+
+  point-in-polygon@1.1.0:
+    resolution: {integrity: sha512-3ojrFwjnnw8Q9242TzgXuTD+eKiutbzyslcq1ydfu82Db2y+Ogbmyrkpv0Hgj31qwT3lbS9+QAAO/pIQM35XRw==}
 
   polybooljs@1.2.2:
     resolution: {integrity: sha512-ziHW/02J0XuNuUtmidBc6GXE8YohYydp3DWPWXYsd7O721TjcmN+k6ezjdwkDqep+gnWnFY+yqZHvzElra2oCg==}
@@ -5609,6 +5582,9 @@ packages:
   prismjs@1.29.0:
     resolution: {integrity: sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==}
     engines: {node: '>=6'}
+
+  probe-image-size@7.3.0:
+    resolution: {integrity: sha512-7CaDeBwiAbh6ohXsvLbAZhO7wzsZAmaevfxe39qvCwRh8LyaZfDlBGGLU1CCTgrTLtCOdwBBhjOrIHaIIimHfQ==}
 
   process-nextick-args@2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
@@ -6276,6 +6252,9 @@ packages:
   std-env@3.7.0:
     resolution: {integrity: sha512-JPbdCEQLj1w5GilpiHAx3qJvFndqybBysA3qUOnznweH4QbNYUsW/ea8QzSrnh0vNsezMMw5bcVool8lM0gwzg==}
 
+  stream-parser@0.3.1:
+    resolution: {integrity: sha512-bJ/HgKq41nlKvlhccD5kaCr/P+Hu0wPNKPJOH7en+YrJu/9EgqUF+88w5Jb6KNcjOFMhfX4B2asfeAtIGuHObQ==}
+
   stream-shift@1.0.3:
     resolution: {integrity: sha512-76ORR0DO1o1hlKwTbi/DM3EXWGf3ZJYO8cXX5RJwnul2DEg2oyoZyjLNoQM8WsvZiFKCRfC1O0J7iCvie3RZmQ==}
 
@@ -6854,8 +6833,8 @@ packages:
     peerDependencies:
       webpack: 3 || 4 || 5
 
-  websocket-driver@0.7.4:
-    resolution: {integrity: sha512-b17KeDIQVjvb0ssuSDF2cYXSg2iztliJ4B9WdsuB6J952qCPKmnVq4DyW5motImXHDC1cBT/1UezrJVsKw5zjg==}
+  websocket-driver@0.7.5:
+    resolution: {integrity: sha512-ZL2+3c7kMBdIRCMz6l8jQMHyGVxj+UL+xVk74Ombiciboca8rHa15L86B19E5oh1pL9Ii/uj54gtsIrZGMo6zA==}
     engines: {node: '>=0.8.0'}
 
   websocket-extensions@0.1.4:
@@ -10170,6 +10149,8 @@ snapshots:
       d3-collection: 1.0.7
       d3-shape: 1.3.7
 
+  '@plotly/d3@3.8.1': {}
+
   '@plotly/point-cluster@3.1.9':
     dependencies:
       array-bounds: 1.0.1
@@ -10182,6 +10163,8 @@ snapshots:
       math-log2: 1.0.1
       parse-rect: 1.2.0
       pick-by-alias: 1.2.0
+
+  '@plotly/regl@2.1.2': {}
 
   '@polka/url@1.0.0-next.25': {}
 
@@ -11531,9 +11514,26 @@ snapshots:
       d3-quadtree: 1.0.7
       d3-timer: 1.0.10
 
+  d3-format@1.4.5: {}
+
+  d3-geo-projection@2.9.0:
+    dependencies:
+      commander: 2.20.3
+      d3-array: 1.2.4
+      d3-geo: 1.12.1
+      resolve: 1.22.8
+
+  d3-geo@1.12.1:
+    dependencies:
+      d3-array: 1.2.4
+
   d3-hierarchy@1.1.9: {}
 
   d3-interpolate@1.4.0:
+    dependencies:
+      d3-color: 1.4.1
+
+  d3-interpolate@3.0.1:
     dependencies:
       d3-color: 1.4.1
 
@@ -11616,6 +11616,10 @@ snapshots:
   debug@2.6.9:
     dependencies:
       ms: 2.0.0
+
+  debug@3.2.7:
+    dependencies:
+      ms: 2.1.3
 
   debug@4.3.5:
     dependencies:
@@ -12199,7 +12203,7 @@ snapshots:
 
   faye-websocket@0.11.4:
     dependencies:
-      websocket-driver: 0.7.4
+      websocket-driver: 0.7.5
 
   fbemitter@3.0.0:
     dependencies:
@@ -13272,6 +13276,8 @@ snapshots:
 
   is-mobile@2.2.2: {}
 
+  is-mobile@4.0.0: {}
+
   is-negative-zero@2.0.3: {}
 
   is-npm@5.0.0: {}
@@ -13757,6 +13763,8 @@ snapshots:
 
   nanoid@3.3.7: {}
 
+  native-promise-only@0.8.1: {}
+
   natural-compare@1.4.0: {}
 
   ndarray-extract-contour@1.0.1:
@@ -13793,6 +13801,14 @@ snapshots:
     dependencies:
       iota-array: 1.0.0
       is-buffer: 1.1.6
+
+  needle@2.9.1:
+    dependencies:
+      debug: 3.2.7
+      iconv-lite: 0.4.24
+      sax: 1.4.1
+    transitivePeerDependencies:
+      - supports-color
 
   negotiator@0.6.3: {}
 
@@ -14166,12 +14182,68 @@ snapshots:
       webgl-context: 2.2.0
       world-calendars: 1.0.3
 
+  plotly.js@2.25.2:
+    dependencies:
+      '@plotly/d3': 3.8.1
+      '@plotly/d3-sankey': 0.7.2
+      '@plotly/d3-sankey-circular': 0.33.1
+      '@turf/area': 6.5.0
+      '@turf/bbox': 6.5.0
+      '@turf/centroid': 6.5.0
+      canvas-fit: 1.5.0
+      color-alpha: 1.0.4
+      color-normalize: 1.5.0
+      color-parse: 1.3.8
+      color-rgba: 2.1.1
+      country-regex: 1.1.0
+      d3-force: 1.2.1
+      d3-format: 1.4.5
+      d3-geo: 1.12.1
+      d3-geo-projection: 2.9.0
+      d3-hierarchy: 1.1.9
+      d3-interpolate: 3.0.1
+      d3-time: 1.1.0
+      d3-time-format: 2.3.0
+      fast-isnumeric: 1.1.4
+      gl-mat4: 1.2.0
+      gl-text: 1.4.0
+      glslify: 7.1.1
+      has-hover: 1.0.1
+      has-passive-events: 1.0.0
+      is-mobile: 4.0.0
+      mapbox-gl: 1.10.1
+      mouse-change: 1.4.0
+      mouse-event-offset: 3.0.2
+      mouse-wheel: 1.2.0
+      native-promise-only: 0.8.1
+      parse-svg-path: 0.1.2
+      point-in-polygon: 1.1.0
+      polybooljs: 1.2.2
+      probe-image-size: 7.3.0
+      regl: '@plotly/regl@2.1.2'
+      regl-error2d: 2.0.12
+      regl-line2d: 3.1.3
+      regl-scatter2d: 3.3.1
+      regl-splom: 1.0.14
+      strongly-connected-components: 1.0.1
+      superscript-text: 1.0.0
+      svg-path-sdf: 1.1.3
+      tinycolor2: 1.6.0
+      to-px: 1.0.1
+      topojson-client: 3.1.0
+      webgl-context: 2.2.0
+      world-calendars: 1.0.3
+    transitivePeerDependencies:
+      - supports-color
+
   point-in-big-polygon@2.0.1:
     dependencies:
       binary-search-bounds: 2.0.5
       interval-tree-1d: 1.0.4
       robust-orientation: 1.2.1
       slab-decomposition: 1.0.3
+
+  point-in-polygon@1.1.0: {}
 
   polybooljs@1.2.2: {}
 
@@ -14429,6 +14501,14 @@ snapshots:
       react: 18.3.1
 
   prismjs@1.29.0: {}
+
+  probe-image-size@7.3.0:
+    dependencies:
+      lodash.merge: 4.6.2
+      needle: 2.9.1
+      stream-parser: 0.3.1
+    transitivePeerDependencies:
+      - supports-color
 
   process-nextick-args@2.0.1: {}
 
@@ -15262,7 +15342,7 @@ snapshots:
     dependencies:
       faye-websocket: 0.11.4
       uuid: 8.3.2
-      websocket-driver: 0.7.4
+      websocket-driver: 0.7.5
 
   sort-css-media-queries@2.1.0: {}
 
@@ -15324,6 +15404,12 @@ snapshots:
   statuses@2.0.1: {}
 
   std-env@3.7.0: {}
+
+  stream-parser@0.3.1:
+    dependencies:
+      debug: 2.6.9
+    transitivePeerDependencies:
+      - supports-color
 
   stream-shift@1.0.3: {}
 
@@ -16010,7 +16096,7 @@ snapshots:
       std-env: 3.7.0
       webpack: 5.93.0
 
-  websocket-driver@0.7.4:
+  websocket-driver@0.7.5:
     dependencies:
       http-parser-js: 0.5.8
       safe-buffer: 5.2.1

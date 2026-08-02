@@ -241,7 +241,7 @@ public static class ConfigureWebServices
 
     // General Services
     b.Services
-      .AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies())
+      .AddAutoMapper(cfg => { }, AppDomain.CurrentDomain.GetAssemblies())
       .AddHttpClient()
       .AddMemoryCache();
 
