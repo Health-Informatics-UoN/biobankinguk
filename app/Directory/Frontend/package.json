@@ -24,7 +24,7 @@
     "knockout.validation": "^2.0.4",
     "markdowndeep": "^1.6.12",
     "moment": "^2.12.0",
-    "plotly.js": "^1.58.4",
+    "plotly.js": "2.25.2",
     "pwstrength-bootstrap": "^1.2.10",
     "typeahead.js": "^0.11.1"
   }
