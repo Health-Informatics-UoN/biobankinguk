@@ -24,8 +24,14 @@
     "knockout.validation": "^2.0.4",
     "markdowndeep": "^1.6.12",
     "moment": "^2.12.0",
-    "plotly.js": "2.25.2",
+    "plotly.js": "3.7.0",
     "pwstrength-bootstrap": "^1.2.10",
     "typeahead.js": "^0.11.1"
+  },
+  "pnpm": {
+    "overrides": {
+      "d3-color": "3.1.0",
+      "js-yaml": "4.3.1"
+    }
   }
 }
