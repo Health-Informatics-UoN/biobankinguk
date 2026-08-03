@@ -116,24 +116,6 @@ importers:
       bootstrap-slider:
         specifier: ^5.3.6
         version: 5.3.6
-      datatables.net:
-        specifier: ^1.10.23
-        version: 1.13.11
-      datatables.net-bs:
-        specifier: ^1.10.23
-        version: 1.13.11
-      datatables.net-buttons:
-        specifier: ^1.1.2
-        version: 1.7.1
-      datatables.net-buttons-bs:
-        specifier: ^1.6.5
-        version: 1.7.1
-      datatables.net-rowreorder:
-        specifier: ^1.2.7
-        version: 1.5.0
-      datatables.net-rowreorder-bs:
-        specifier: ^1.2.7
-        version: 1.5.0
       datetime-moment:
         specifier: ^1.0.0
         version: 1.0.0
@@ -141,89 +123,14 @@ importers:
         specifier: ^4.7.0
         version: 4.7.0
       jquery:
-        specifier: ^2.2.4
-        version: 2.2.4
+        specifier: ^3.7.1
+        version: 3.7.1
       jquery-ajax-unobtrusive:
         specifier: ^3.2.6
         version: 3.2.6
       jquery-validation:
         specifier: ^1.14.0
-        version: 1.21.0(jquery@2.2.4)
-      jquery-validation-unobtrusive:
-        specifier: ^3.2.11
-        version: 3.2.12
-      jquery.cookie:
-        specifier: ^1.4.1
-        version: 1.4.1
-      knockout:
-        specifier: ^3.4.2
-        version: 3.5.1
-      knockout.validation:
-        specifier: ^2.0.4
-        version: 2.0.4(knockout@3.5.1)
-      markdowndeep:
-        specifier: ^1.6.12
-        version: 1.6.12
-      moment:
-        specifier: ^2.12.0
-        version: 2.30.1
-      plotly.js:
-        specifier: 2.25.2
-        version: 2.25.2
-      pwstrength-bootstrap:
-        specifier: ^1.2.10
-        version: 1.2.10
-      typeahead.js:
-        specifier: ^0.11.1
-        version: 0.11.1
-
-  app/Directory/bin/Debug/net8.0/Frontend:
-    dependencies:
-      '@avica/knockout-mapping':
-        specifier: ^2.7.0
-        version: 2.7.0(knockout@3.5.1)
-      bootbox:
-        specifier: ^4.4.0
-        version: 4.4.0
-      bootstrap:
-        specifier: ^3.4.1
-        version: 3.4.1
-      bootstrap-slider:
-        specifier: ^5.3.6
-        version: 5.3.6
-      datatables.net:
-        specifier: ^1.10.23
-        version: 1.13.11
-      datatables.net-bs:
-        specifier: ^1.10.23
-        version: 1.13.11
-      datatables.net-buttons:
-        specifier: ^1.1.2
-        version: 1.7.1
-      datatables.net-buttons-bs:
-        specifier: ^1.6.5
-        version: 1.7.1
-      datatables.net-rowreorder:
-        specifier: ^1.2.7
-        version: 1.5.0
-      datatables.net-rowreorder-bs:
-        specifier: ^1.2.7
-        version: 1.5.0
-      datetime-moment:
-        specifier: ^1.0.0
-        version: 1.0.0
-      font-awesome:
-        specifier: ^4.7.0
-        version: 4.7.0
-      jquery:
-        specifier: ^2.2.4
-        version: 2.2.4
-      jquery-ajax-unobtrusive:
-        specifier: ^3.2.6
-        version: 3.2.6
-      jquery-validation:
-        specifier: ^1.14.0
-        version: 1.21.0(jquery@2.2.4)
+        version: 1.21.0(jquery@3.7.1)
       jquery-validation-unobtrusive:
         specifier: ^3.2.11
         version: 3.2.12
@@ -313,8 +220,8 @@ importers:
         specifier: 2.3.1
         version: 2.3.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@docusaurus/types':
-        specifier: ^2.3.1
-        version: 2.4.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^3.10.2
+        version: 3.10.2(postcss@8.5.25)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@tsconfig/docusaurus':
         specifier: ^1.0.7
         version: 1.0.7
@@ -2623,12 +2530,6 @@ packages:
 
   '@docusaurus/types@2.3.1':
     resolution: {integrity: sha512-PREbIRhTaNNY042qmfSE372Jb7djZt+oVTZkoqHJ8eff8vOIc2zqqDqBVc5BhOfpZGPTrE078yy/torUEZy08A==}
-    peerDependencies:
-      react: ^16.8.4 || ^17.0.0
-      react-dom: ^16.8.4 || ^17.0.0
-
-  '@docusaurus/types@2.4.3':
-    resolution: {integrity: sha512-W6zNLGQqfrp/EoPD0bhb9n7OobP+RHpmvVzpA+Z/IuU3Q63njJM24hmT0GYboovWcDtFmnIJC9wcyx4RVPQscw==}
     peerDependencies:
       react: ^16.8.4 || ^17.0.0
       react-dom: ^16.8.4 || ^17.0.0
@@ -12046,7 +11947,7 @@ snapshots:
       '@slorber/remark-comment': 1.0.0
       escape-html: 1.0.3
       estree-util-value-to-estree: 3.5.0
-      file-loader: 6.2.0(webpack@5.93.0)
+      file-loader: 6.2.0(webpack@5.109.2(postcss@8.5.25))
       fs-extra: 11.4.0
       image-size: 2.0.2
       mdast-util-mdx: 3.0.0
@@ -12062,9 +11963,9 @@ snapshots:
       tslib: 2.8.1
       unified: 11.0.5
       unist-util-visit: 5.1.0
-      url-loader: 4.1.1(file-loader@6.2.0(webpack@5.93.0))(webpack@5.93.0)
+      url-loader: 4.1.1(file-loader@6.2.0(webpack@5.109.2(postcss@8.5.25)))(webpack@5.109.2(postcss@8.5.25))
       vfile: 6.0.3
-      webpack: 5.93.0
+      webpack: 5.109.2(postcss@8.5.25)
     transitivePeerDependencies:
       - '@minify-html/node'
       - '@swc/core'
@@ -12149,7 +12050,7 @@ snapshots:
       tslib: 2.8.1
       unist-util-visit: 5.1.0
       utility-types: 3.11.0
-      webpack: 5.93.0
+      webpack: 5.109.2(postcss@8.5.25)
     transitivePeerDependencies:
       - '@docusaurus/faster'
       - '@mdx-js/react'
@@ -12195,7 +12096,7 @@ snapshots:
       schema-dts: 1.1.5
       tslib: 2.8.1
       utility-types: 3.11.0
-      webpack: 5.93.0
+      webpack: 5.109.2(postcss@8.5.25)
     transitivePeerDependencies:
       - '@docusaurus/faster'
       - '@mdx-js/react'
@@ -12231,7 +12132,7 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       tslib: 2.8.1
-      webpack: 5.93.0
+      webpack: 5.109.2(postcss@8.5.25)
     transitivePeerDependencies:
       - '@docusaurus/faster'
       - '@mdx-js/react'
@@ -12467,7 +12368,7 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       tslib: 2.8.1
-      webpack: 5.93.0
+      webpack: 5.109.2(postcss@8.5.25)
     transitivePeerDependencies:
       - '@docusaurus/faster'
       - '@mdx-js/react'
@@ -12706,24 +12607,6 @@ snapshots:
       - uglify-js
       - webpack-cli
 
-  '@docusaurus/types@2.4.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@types/history': 4.7.11
-      '@types/react': 18.3.3
-      commander: 5.1.0
-      joi: 17.13.3
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      react-helmet-async: 1.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      utility-types: 3.11.0
-      webpack: 5.93.0
-      webpack-merge: 5.10.0
-    transitivePeerDependencies:
-      - '@swc/core'
-      - esbuild
-      - uglify-js
-      - webpack-cli
-
   '@docusaurus/types@3.10.2(clean-css@5.3.3)(cssnano@6.1.2(postcss@8.5.25))(html-minifier-terser@7.2.0)(postcss@8.5.25)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@mdx-js/mdx': 3.1.1
@@ -12864,7 +12747,7 @@ snapshots:
       '@docusaurus/utils-common': 3.10.2(clean-css@5.3.3)(cssnano@6.1.2(postcss@8.5.25))(html-minifier-terser@7.2.0)(postcss@8.5.25)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       escape-string-regexp: 4.0.0
       execa: 5.1.1
-      file-loader: 6.2.0(webpack@5.93.0)
+      file-loader: 6.2.0(webpack@5.109.2(clean-css@5.3.3)(cssnano@6.1.2(postcss@8.5.25))(html-minifier-terser@7.2.0)(postcss@8.5.25))
       fs-extra: 11.4.0
       github-slugger: 1.5.0
       globby: 11.1.0
@@ -12876,9 +12759,9 @@ snapshots:
       prompts: 2.4.2
       resolve-pathname: 3.0.0
       tslib: 2.8.1
-      url-loader: 4.1.1(file-loader@6.2.0(webpack@5.93.0))(webpack@5.93.0)
+      url-loader: 4.1.1(file-loader@6.2.0(webpack@5.109.2(clean-css@5.3.3)(cssnano@6.1.2(postcss@8.5.25))(html-minifier-terser@7.2.0)(postcss@8.5.25)))(webpack@5.109.2(clean-css@5.3.3)(cssnano@6.1.2(postcss@8.5.25))(html-minifier-terser@7.2.0)(postcss@8.5.25))
       utility-types: 3.11.0
-      webpack: 5.93.0
+      webpack: 5.109.2(clean-css@5.3.3)(cssnano@6.1.2(postcss@8.5.25))(html-minifier-terser@7.2.0)(postcss@8.5.25)
     transitivePeerDependencies:
       - '@minify-html/node'
       - '@swc/core'
@@ -12905,7 +12788,7 @@ snapshots:
       '@docusaurus/utils-common': 3.10.2(postcss@8.5.25)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       escape-string-regexp: 4.0.0
       execa: 5.1.1
-      file-loader: 6.2.0(webpack@5.93.0)
+      file-loader: 6.2.0(webpack@5.109.2(postcss@8.5.25))
       fs-extra: 11.4.0
       github-slugger: 1.5.0
       globby: 11.1.0
@@ -12917,9 +12800,9 @@ snapshots:
       prompts: 2.4.2
       resolve-pathname: 3.0.0
       tslib: 2.8.1
-      url-loader: 4.1.1(file-loader@6.2.0(webpack@5.93.0))(webpack@5.93.0)
+      url-loader: 4.1.1(file-loader@6.2.0(webpack@5.109.2(postcss@8.5.25)))(webpack@5.109.2(postcss@8.5.25))
       utility-types: 3.11.0
-      webpack: 5.93.0
+      webpack: 5.109.2(postcss@8.5.25)
     transitivePeerDependencies:
       - '@minify-html/node'
       - '@swc/core'
@@ -13111,7 +12994,7 @@ snapshots:
   '@jridgewell/source-map@0.3.6':
     dependencies:
       '@jridgewell/gen-mapping': 0.3.13
-      '@jridgewell/trace-mapping': 0.3.25
+      '@jridgewell/trace-mapping': 0.3.31
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
@@ -13734,7 +13617,7 @@ snapshots:
 
   '@types/eslint@9.6.0':
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.9
       '@types/json-schema': 7.0.15
 
   '@types/estree-jsx@1.0.5':
@@ -15772,6 +15655,12 @@ snapshots:
       loader-utils: 2.0.4
       schema-utils: 3.3.0
       webpack: 5.109.2(clean-css@5.3.3)(cssnano@6.1.2(postcss@8.5.25))(html-minifier-terser@7.2.0)(postcss@8.5.25)
+
+  file-loader@6.2.0(webpack@5.109.2(postcss@8.5.25)):
+    dependencies:
+      loader-utils: 2.0.4
+      schema-utils: 3.3.0
+      webpack: 5.109.2(postcss@8.5.25)
 
   file-loader@6.2.0(webpack@5.93.0):
     dependencies:
@@ -19411,7 +19300,7 @@ snapshots:
   terser@5.31.3:
     dependencies:
       '@jridgewell/source-map': 0.3.6
-      acorn: 8.12.1
+      acorn: 8.18.0
       commander: 2.20.3
       source-map-support: 0.5.21
 
@@ -19672,6 +19561,15 @@ snapshots:
       webpack: 5.109.2(clean-css@5.3.3)(cssnano@6.1.2(postcss@8.5.25))(html-minifier-terser@7.2.0)(postcss@8.5.25)
     optionalDependencies:
       file-loader: 6.2.0(webpack@5.109.2(clean-css@5.3.3)(cssnano@6.1.2(postcss@8.5.25))(html-minifier-terser@7.2.0)(postcss@8.5.25))
+
+  url-loader@4.1.1(file-loader@6.2.0(webpack@5.109.2(postcss@8.5.25)))(webpack@5.109.2(postcss@8.5.25)):
+    dependencies:
+      loader-utils: 2.0.4
+      mime-types: 2.1.35
+      schema-utils: 3.3.0
+      webpack: 5.109.2(postcss@8.5.25)
+    optionalDependencies:
+      file-loader: 6.2.0(webpack@5.109.2(postcss@8.5.25))
 
   url-loader@4.1.1(file-loader@6.2.0(webpack@5.93.0))(webpack@5.93.0):
     dependencies:
