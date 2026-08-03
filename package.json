@@ -15,10 +15,5 @@
   "packageManager": "pnpm@9.6.0",
   "scripts": {
     "prepare": "husky install"
-  },
-  "pnpm": {
-    "overrides": {
-      "websocket-driver": ">=0.7.5"
-    }
   }
 }
