@@ -106,7 +106,7 @@ importers:
         specifier: ^0.11.1
         version: 0.11.1
 
-  app/Directory/bin/Release/net10.0/linux-x64/Frontend:
+  app/Directory/bin/Debug/net10.0/Frontend:
     dependencies:
       '@avica/knockout-mapping':
         specifier: ^2.7.0
@@ -181,7 +181,7 @@ importers:
         specifier: ^0.11.1
         version: 0.11.1
 
-  app/Directory/bin/Release/net10.0/win-x64/Frontend:
+  app/Directory/bin/Release/net10.0/osx-arm64/Frontend:
     dependencies:
       '@avica/knockout-mapping':
         specifier: ^2.7.0
