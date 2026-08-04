@@ -111,8 +111,11 @@ jobs:
         with:
           dotnet-version: ${{ env.dotnet-version }}
 
-      - name: Restore solution
-        run: dotnet restore ./biobankinguk.sln
+      - name: Restore migrations project
+        run: dotnet restore ${{ env.migrations-project }}
+
+      - name: Restore application project
+        run: dotnet restore ${{ env.app-project }}
 
       - name: Restore dotnet tools
         run: dotnet tool restore
