@@ -29,8 +29,6 @@ env:
   DOTNET_NOLOGO: true
 
 jobs:
-  # Any initialisation other jobs depend on?
-  # e.g. getting the version number and putting in an output for easier use
   init:
     runs-on: ubuntu-latest
 
@@ -41,12 +39,10 @@ jobs:
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
-      # short git sha for use in versions
       - name: Get short SHA
         id: sha
         run: echo "sha=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
 
-      # get app version from csproj
       - name: Read version
         id: version
         uses: bbonkr/get-version-action@050c4c0c91ed925d5736322939ab5c4a1078cca5 # v1.3.1
@@ -61,12 +57,10 @@ jobs:
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
-      # pnpm install so we have frontend dependencies for bundling
       - uses: ./.github/actions/template.pnpm-install
         with:
           filter: ${{ env.frontend-package }}
 
-      # dotnet publish now we have dependencies
       - uses: actions/setup-dotnet@67a3573c9a986a3f9c594539f4ab511d57bb3ce9 # v4.3.1
         with:
           dotnet-version: ${{ env.dotnet-version }}
@@ -79,7 +73,6 @@ jobs:
           -o ${{ env.publish-dir }}
           -p:GitHash=${{ needs.init.outputs.short-sha }}
 
-      # upload the published artifact
       - uses: actions/upload-artifact@4cec3d8aa04e39d1a68397de0c4cd6fb9dce8ec1 # v4.6.1
         with:
           name: ${{ format('directory-{0}_dotnet-{1}', needs.init.outputs.version, env.dotnet-version) }}
@@ -104,12 +97,27 @@ jobs:
 
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
       - uses: actions/setup-dotnet@67a3573c9a986a3f9c594539f4ab511d57bb3ce9 # v4.3.1
         with:
           dotnet-version: ${{ env.dotnet-version }}
-      - run: dotnet tool restore
 
-      - run: >-
+      # Restore NuGet packages so project.assets.json exists
+      - name: Restore migrations project
+        run: dotnet restore ${{ env.migrations-project }}
+
+      # Restore startup project dependencies used by EF
+      - name: Restore application project
+        run: dotnet restore ${{ env.app-project }}
+
+      - name: Restore dotnet tools
+        run: dotnet tool restore
+
+      - name: Check EF version
+        run: dotnet ef --version
+
+      - name: Create migrations bundle
+        run: >-
           dotnet ef migrations bundle
           -p ${{ env.migrations-project }}
           -s ${{ env.app-project }}
