@@ -84,10 +84,7 @@
     <Copy SourceFiles="@(Assets_Fonts)" DestinationFiles="wwwroot/dist/fonts/%(RecursiveDir)%(Filename)%(Extension)" />
     <Copy SourceFiles="@(Assets_Markdown)" DestinationFiles="wwwroot/dist/css/%(RecursiveDir)%(Filename)%(Extension)" />
 
-    <Copy
-      SourceFiles="Frontend/node_modules/plotly.js/dist/plotly.min.js"
-      DestinationFiles="wwwroot/dist/js/vendor/plotly.min.js"
-      Condition="Exists('Frontend/node_modules/plotly.js/dist/plotly.min.js')" />
+  
     
     <!-- Elastic Search Index Descriptions -->
     <Copy SourceFiles="..\..\elastic-search\directory index setup\capabilities.json" DestinationFolder="Settings" />
