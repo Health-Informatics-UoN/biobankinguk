@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
-using System.Security.Claims;
 using System.Threading.Tasks;
 using AutoMapper;
 using Biobanks.Data.Entities;
@@ -184,13 +183,7 @@ public class ProfileController : Controller
         request.OrganisationExternalId = biobank.OrganisationExternalId;
         await _organisationService.UpdateRegistrationRequest(request);
 
-        //add a claim now that they're associated with the biobank
-        await _userManager.AddClaimsAsync(await _userManager.GetUserAsync(User),new List<Claim>
-        {
-            new Claim(CustomClaimType.Biobank, JsonConvert.SerializeObject(new KeyValuePair<int, string>(biobank.OrganisationId, biobank.Name)))
-        });
-        
-        // Resign in the user so their claims are repopulated.
+        // Resign in the user so their claims are repopulated, picking up the new biobank association.
         var user = await _userManager.GetUserAsync(User);
         await _signInManager.RefreshSignInAsync(user);
 
